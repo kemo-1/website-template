@@ -2,7 +2,7 @@
 // Set the languages you want to support on your site.
 // https://astro-cms-dpv.pages.dev/setup/
 
-export const DEFAULT_LOCALE_SETTING: string = "en";
+export const DEFAULT_LOCALE_SETTING: string = "ar";
 
 interface LocaleSetting {
 	[key: Lowercase<string>]: {
@@ -16,16 +16,6 @@ export const LOCALES_SETTING: LocaleSetting = {
 	en: {
 		label: "English",
 		lang: "en-US",
-	},
-	es: {
-		label: "Español",
-	},
-	ja: {
-		label: "日本語",
-	},
-	"zh-cn": {
-		label: "简体中文",
-		lang: "zh-CN",
 	},
 	ar: {
 		label: "العربية",

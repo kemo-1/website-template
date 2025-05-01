@@ -21,14 +21,15 @@ public_folder: "src/assets/images" # The src attribute for uploaded media
 
 i18n:
   structure: 'multiple_folders'
-  locales: ['en', 'es', 'ar', 'ja', 'zh-cn']
-  default_locale: 'en'
+  locales: ['en',  'ar']
+  default_locale: 'ar'
 
 
 collections:
   - name: 'posts'
     label: 'Posts'
     label_singular: 'Post'
+    format: frontmatter
     folder: 'src/data/blog'
     create: true
     slug: '{{year}}/{{month}}/{{day}}/{{slug}}'
