@@ -27,8 +27,8 @@ i18n:
 
 collections:
   - name: 'posts'
-    label: 'Posts'
-    label_singular: 'Post'
+    label: 'المقالات'
+    label_singular: 'مقال'
     format: frontmatter
     folder: 'src/data/blog'
     create: true
@@ -38,23 +38,24 @@ collections:
     fields:
       - name: 'title'
         widget: 'string'
-        label: 'Title'
+        label: 'العنوان'
         i18n: true
       - name: 'description'
         widget: 'string'
-        label: 'Description'
+        label: 'الوصف'
         i18n: true
       - name: 'date'
         widget: 'datetime'
-        label: 'Publish Date'
+        label: 'تاريخ النشر'
         i18n: 'duplicate'
       - name: 'lastModified'
         widget: 'datetime'
-        label: 'Last Modified'
+        label: 'تاريخ آخر تعديل'
         required: false
         default: "{{now}}"
         i18n: 'duplicate'
       - name: 'author'
+        label: 'المؤلف'
         widget: 'relation'
         collection: 'authors'
         value_field: '{{locale}}/{{slug}}'
