@@ -4,8 +4,8 @@ logo_url: /favicon.svg
 
 backend:
   name: github
-  repo: yacosta738/astro-cms
-  branch: main
+  repo: kemo-1/website-template
+  branch: master
   base_url: https://sveltia-cms-auth.yunielacosta738.workers.dev/
 
 publish_mode: editorial_workflow
@@ -21,7 +21,7 @@ public_folder: "src/assets/images" # The src attribute for uploaded media
 
 i18n:
   structure: 'multiple_folders'
-  locales: ['en',  'ar']
+  locales: ['ar','en']
   default_locale: 'ar'
 
 
