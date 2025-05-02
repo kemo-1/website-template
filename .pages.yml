@@ -5,7 +5,8 @@ content:
   - name: posts
     label: Posts
     type: collection
-    path: src/content/blog/ar
+    filename: 'fields.title'
+    path: src/data/blog/ar
     view:
       fields: [ title, draft, date ]
     fields:
@@ -18,7 +19,7 @@ content:
       # - { name: featured, label: Featured, type: boolean }
       - { name: draft, label: Draft, type: boolean }
       - { name: tags, label: Tags, type: string, list: true }
-      - { name: category, label: category, type: string, list: true }
+      - { name: category, label: category, type: string }
       - { name: description, label: Description, type: string }
       - { name: body, label: Body, type: rich-text }
 
